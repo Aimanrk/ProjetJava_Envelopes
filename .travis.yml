@@ -10,7 +10,6 @@ stages:
   - test
   - deploy
 
-
 jobs:
   include:
     - stage: build
