@@ -1,4 +1,4 @@
-https://travis-ci.org/Aimanrk/ProjetJava_Envelopes.svg?branch=master
+[![Build Status](https://travis-ci.org/Aimanrk/ProjetJava_Envelopes.svg?branch=master)](https://travis-ci.org/Aimanrk/ProjetJava_Envelopes)
 
 # Importation de l'API
 
