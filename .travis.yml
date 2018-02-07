@@ -35,4 +35,11 @@ branches:
     - master
 
 after_success:
-  echo "Build stages completed"
+  - echo "Build stages completed"
+  
+notifications:
+  email:
+    recipients:
+      - aiman.rkyek1@gmail.com
+    on_success: never 
+    on_failure: always 
