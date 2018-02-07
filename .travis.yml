@@ -12,4 +12,9 @@ stages:
 
 script:
   - mvn compile
+  - mvn test
+  - mvn package 
+
+
+
 
