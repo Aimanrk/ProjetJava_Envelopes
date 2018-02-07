@@ -1,13 +1,17 @@
+#language of the applicaiton
 language: java
 
+#Run the pipeline for different JDKs
 jdk:
   - oraclejdk8
 #  - oraclejdk7
 #  - openjdk7
 
+#Update package database to avoid problems 
 before_install:
   - sudo apt-get update
-  
+
+##Improve build speed in order to speed up future builds by keeping the Maven local repository between different runs  
 cache:
   directories:
   - $HOME/.m2
@@ -36,7 +40,8 @@ branches:
 
 after_success:
   - echo "Build stages completed"
-  
+
+#send notification to my e-mail in case the pipline failed
 notifications:
   email:
     recipients:
