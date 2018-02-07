@@ -1,3 +1,5 @@
+https://travis-ci.org/Aimanrk/ProjetJava_Envelopes.svg?branch=master
+
 # Importation de l'API
 
 Pour utiliser l'api il faut d'abord importer la librairie .jar dans les dépendances 
