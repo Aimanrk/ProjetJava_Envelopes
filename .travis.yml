@@ -21,5 +21,4 @@ jobs:
       script:
         - mvn verify
     - stage: deploy
-    if: branch = master
 	
