@@ -10,11 +10,12 @@ stages:
   - test
   - deploy
 
-script:
-  - mvn compile
-  - mvn test
-  - mvn package 
 
-
+maven_build:
+  - stage: build
+    script:
+     - mvn compile
+     - mvn test
+     - mvn package
 
 
