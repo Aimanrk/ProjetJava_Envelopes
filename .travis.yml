@@ -5,6 +5,13 @@ jdk:
 #  - oraclejdk7
 #  - openjdk7
 
+before_install:
+  - sudo apt-get update
+  
+cache:
+  directories:
+  - $HOME/.m2
+
 stages: 
   - build
   - test
@@ -27,3 +34,5 @@ branches:
   only:
     - master
 
+after_success:
+  echo "Build stages completed"
