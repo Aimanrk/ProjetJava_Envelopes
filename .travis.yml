@@ -1,7 +1,7 @@
 #language of the applicaiton
 language: java
 
-#Run the pipeline for different JDKs
+#Run the pipeline for different JDKs in parallel
 jdk:
   - oraclejdk8
 #  - oraclejdk7
@@ -20,7 +20,6 @@ stages:
   - build
   - test
   - deploy
-
 
 jobs:
   include:
