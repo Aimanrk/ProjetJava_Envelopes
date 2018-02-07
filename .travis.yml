@@ -10,16 +10,14 @@ stages:
   - test
   - deploy
 
-
-maven_build:
-  - stage: build
-    script:
-     - mvn compile
-     - mvn test
-     - mvn package
-
-maven_test:
-  - stage: test
-    script:
-     - mvn verify
+jobs:
+  include:
+    - stage: build
+      script:
+        - mvn compile
+        - mvn test
+        - mvn package
+    - stage: test
+      script:
+        - mvn verify
 
