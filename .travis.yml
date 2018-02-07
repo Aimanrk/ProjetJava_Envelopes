@@ -20,4 +20,6 @@ jobs:
     - stage: test
       script:
         - mvn verify
-
+    - stage: deploy
+    if: branch = master
+	
