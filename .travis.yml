@@ -2,11 +2,14 @@ language: java
 
 jdk:
   - oraclejdk8
-  - oraclejdk7
-  - openjdk7
+#  - oraclejdk7
+#  - openjdk7
 
 stages: 
   - build
   - test
   - deploy
+
+script:
+  - mvn compile
 
