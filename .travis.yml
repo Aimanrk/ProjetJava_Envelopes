@@ -18,4 +18,8 @@ maven_build:
      - mvn test
      - mvn package
 
+maven_test:
+  - stage: test
+    script:
+     - mvn verify
 
