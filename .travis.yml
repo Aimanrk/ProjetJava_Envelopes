@@ -24,6 +24,8 @@ jobs:
     - stage: deploy
       provider: heroku
         api_key:
-	secure: bebbe7f3-a622-4683-a7d3-82387a675cc8
-	app: envelopes1
+	secure: 
+		bebbe7f3-a622-4683-a7d3-82387a675cc8
+	app: 
+		envelopes1
 
